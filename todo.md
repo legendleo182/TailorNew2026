@@ -1,0 +1,41 @@
+# Project TODO
+
+- [x] Define Supabase database and private bill-image storage, protected by authenticated application workflows.
+- [x] Create shops data model and responsive add, edit, and delete workflow.
+- [x] Create customers data model with customer name, address, and mobile number.
+- [x] Create bills data model with shop/customer selection, stitching amount, balance amount, required payment choice, required progress reason, and completion state.
+- [x] Implement secure image upload, preview, replacement, and deletion for bills.
+- [x] Build an elegant mobile-first dashboard and responsive navigation.
+- [x] Implement bill details, editing, deleting, and order-completion controls.
+- [x] Implement bill search across customer name, amount, address, and mobile number.
+- [x] Implement bill status and payment filtering.
+- [x] Implement reports for total paid balance, total unpaid balance, total stitching amount, and 50% deducted stitching amount.
+- [x] Add automated tests for core billing calculations and validation.
+- [x] Verify responsive desktop and mobile experience.
+- [x] Add a date-range filter to reports so all report figures reflect the selected period.
+- [x] Add CSV export for the currently filtered report bill data.
+- [x] Test date-range calculations, CSV escaping, and responsive export controls.
+- [x] Add report loading states so totals do not appear as misleading zero values before data is available.
+- [x] Prevent CSV export until the complete report dataset has loaded.
+- [x] Verify the selected-range export workflow uses the loaded bill records.
+- [x] Add recent monthly performance aggregation for billing analytics.
+- [x] Add responsive monthly summary cards to the analytics dashboard.
+- [x] Test monthly aggregation calculations and dashboard presentation.
+- [x] Add a required salesman selection to customer add and edit workflows with Naveen C-11, Rajeev SC-10, Anand SC-13, and Chander TSC-23.
+- [x] Persist salesman details securely and include them in customer and bill data.
+- [x] Display customer names with the salesman prefix in curly brackets across customer and bill views.
+- [x] Test salesman persistence, search behavior, and responsive display.
+- [x] Add integration coverage for salesman persistence in customer records and bill snapshots.
+- [x] Search bills by salesman and the visible `{Salesman} Customer Name` label.
+- [x] Re-run loaded-state desktop verification for the customer form and populated customer/bill views.
+- [x] Verify the customer add/edit modal on desktop with the salesman dropdown visible and usable.
+- [x] Capture a populated desktop bill view showing the `{Salesman} Customer Name` format.
+- [x] Document the completed customer-modal and populated-bill visual verification.
+- [x] Verify the desktop customer edit modal with the salesman dropdown visible and usable.
+- [x] Keep permanent project documentation for the customer-modal and populated-bill visual verification.
+- [ ] Keep customer name mandatory, allow an empty mobile number, and preserve a safe null/empty mobile value.
+- [ ] Add Order completed to the bill status selector with green, yellow, and red reason indicators.
+- [ ] Replace the customer mobile subtitle in the bill selector with a short address.
+- [ ] Diagnose and fix the Supabase secure bill-image upload 400 error.
+- [ ] Add tests for optional mobile validation, status presentation, short address formatting, and image upload error handling.
+- [ ] Verify the corrected flows on desktop and mobile and retain QA notes.
